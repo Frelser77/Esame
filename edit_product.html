@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="description" content="" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<title>Edit Product</title>
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+	<body>
+		<div class="container-md">
+			<div class="row justify-content-center align-items-baseline g-5">
+				<div class="col-md-7 my-5 p-3 my-bg rounded">
+					<div class="mb-4">
+						<h2 id="titlePage" class="display-4 d-inline-block fw-bold text-decoration-underline">Editing Card</h2>
+						<h5 id="subtitle" class="d-inline-block"></h5>
+					</div>
+
+					<hr />
+					<div id="alert-box"></div>
+					<form id="editForm">
+						<div class="mb-3">
+							<label for="name" class="form-label text-dark">Name</label>
+							<input
+								type="text"
+								class="form-control"
+								id="name"
+								placeholder="Inserisci il nome dell'appuntamento"
+								required
+							/>
+						</div>
+						<div class="mb-3">
+							<label for="description" class="form-label text-dark">Description</label>
+							<textarea
+								type="text"
+								class="form-control"
+								id="description"
+								placeholder="Inserisci la descrizione"
+								required
+							></textarea>
+						</div>
+						<div class="mb-3">
+							<label for="brand" class="form-label text-dark">Brand</label>
+							<input type="text" class="form-control" id="brand" required />
+						</div>
+						<div class="mb-3">
+							<label for="imageUrl" class="form-label text-dark">Image URL</label>
+							<input type="text" class="form-control" id="imageUrl" required />
+						</div>
+						<div class="mb-3">
+							<label for="price" class="form-label text-dark">Price</label>
+							<input type="number" class="form-control" id="price" placeholder="87€" required />
+						</div>
+						<div class="d-flex align-baseline justify-content-between">
+							<button type="submit" class="btn btn-secondary" id="editButton">Edit Card</button>
+							<a href="./index.html">
+								<button type="button" id="homeButton" class="btn btn-secondary my-btn d-none">Home</button>
+							</a>
+							<button type="button" id="deleteButton" class="btn btn-danger">
+								<svg
+									xmlns="http://www.w3.org/2000/svg"
+									width="20"
+									height="20"
+									fill="currentColor"
+									class="bi bi-trash3"
+									viewBox="0 0 16 16"
+								>
+									<path
+										d="M6.5 1h3a.5.5 0 0 1 .5.5v1H6v-1a.5.5 0 0 1 .5-.5M11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3A1.5 1.5 0 0 0 5 1.5v1H2.506a.58.58 0 0 0-.01 0H1.5a.5.5 0 0 0 0 1h.538l.853 10.66A2 2 0 0 0 4.885 16h6.23a2 2 0 0 0 1.994-1.84l.853-10.66h.538a.5.5 0 0 0 0-1h-.995a.59.59 0 0 0-.01 0zm1.958 1-.846 10.58a1 1 0 0 1-.997.92h-6.23a1 1 0 0 1-.997-.92L3.042 3.5zm-7.487 1a.5.5 0 0 1 .528.47l.5 8.5a.5.5 0 0 1-.998.06L5 5.03a.5.5 0 0 1 .47-.53Zm5.058 0a.5.5 0 0 1 .47.53l-.5 8.5a.5.5 0 1 1-.998-.06l.5-8.5a.5.5 0 0 1 .528-.47ZM8 4.5a.5.5 0 0 1 .5.5v8.5a.5.5 0 0 1-1 0V5a.5.5 0 0 1 .5-.5"
+									/>
+								</svg>
+							</button>
+						</div>
+					</form>
+				</div>
+				<div class="col-md-4 m-5">
+					<h3 class="text-dark">Anteprima Prodotto</h3>
+					<div class="card mt-5">
+						<img id="previewImage" src="./assets/img/default_img.png" class="card-img-top" alt="Anteprima Immagine" />
+						<div class="card-body">
+							<h5 id="previewName" class="card-title border-bottom">Name of Product</h5>
+							<p id="previewDescription" class="card-text border-bottom">Description</p>
+							<p id="previewBrand" class="card-text border-bottom">Brande of Product</p>
+							<p id="previewPrice" class="card-text border-bottom">Price of Product</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<footer class="bg-dark p-5 mt-3">
+			<div class="container d-flex align-items-center justify-content-center">
+				<a href="#" class="me-2 text-decoration-none">FAQ</a>
+				<a href="#" class="me-2 text-decoration-none">We</a>
+				<a href="#" class="me-2 text-decoration-none">Help</a>
+				<a href="#" class="me-2 text-decoration-none">Utilities</a>
+			</div>
+			<p class="text-light text-center fs-6">
+				&copy; All rights reserved, Frelser77
+				<a href="https://github.com/Frelser77" target="_blank">
+					<svg
+						xmlns="http://www.w3.org/2000/svg"
+						width="20"
+						height="20"
+						fill="currentColor"
+						class="bi bi-github"
+						viewBox="0 0 16 16"
+					>
+						<path
+							d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8"
+						/>
+					</svg>
+				</a>
+			</p>
+		</footer>
+
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+			crossorigin="anonymous"
+		></script>
+		<script src="./assets/js/edit_scritp.js"></script>
+	</body>
+</html>

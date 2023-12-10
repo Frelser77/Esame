@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+.my-bg {
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, rgba(50, 49, 49, 1) 80%);
+	background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, rgba(50, 49, 49, 1) 80%);
+	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, rgba(50, 49, 49, 1) 80%);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background: rgb(255, 255, 255);
+	background: -moz-linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, rgba(50, 49, 49, 1) 80%);
+	background: -webkit-linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, rgba(50, 49, 49, 1) 80%);
+	background: linear-gradient(180deg, rgba(255, 255, 255, 1) 20%, rgba(50, 49, 49, 1) 80%);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.btn {
+	border-radius: 5px;
+	background-color: rgba(255, 232, 212, 0.591);
+	color: black;
+}
+
+.my-gap {
+	gap: 0.25rem;
+}
+
+.card-img-top {
+	width: 100%;
+	height: auto;
+	max-height: 300px;
+}
+
+.card {
+	-webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+	transform: translateY(-5px);
+	-webkit-box-shadow: 0px 0px 20px 5px #000000;
+	box-shadow: 0px 0px 20px 5px #0000007c;
+}
+
+.dropdown-menu {
+	width: 400px; /* o qualsiasi altra larghezza desiderata */
+	padding: 10px; /* aggiunge spazio all'interno del contenitore del menu */
+}
+
+.dropdown-item {
+	font-size: 1.5rem; /* aumenta la dimensione del font per ogni elemento del menu */
+	line-height: 2; /* aumenta l'altezza della linea per aumentare lo spazio tra gli elementi del menu */
+}
+
+#loading.spinner-border {
+	width: 3rem;
+	height: 3rem;
+}
+
+.btn-Edit:hover {
+	background-color: rgba(31, 82, 185, 0.841);
+	color: white;
+}
+.btn-Buy:hover {
+	background-color: rgba(15, 116, 25, 0.841);
+	color: white;
+}
+.btn-Discard:hover {
+	background-color: rgba(183, 17, 17, 0.841);
+	color: white;
+}
+.btn-Find:hover {
+	background-color: rgba(55, 42, 42, 0.841);
+	color: white;
+}
+
+.bg-inf {
+	background-color: #3231314f;
+}
+
+.tx-inf {
+	color: #010101b0;
+}
+
+.my-container {
+	max-width: 900px;
+	margin-inline: auto;
+}
