@@ -48,13 +48,13 @@ body {
 }
 
 .dropdown-menu {
-	width: 400px; /* o qualsiasi altra larghezza desiderata */
-	padding: 10px; /* aggiunge spazio all'interno del contenitore del menu */
+	width: 400px; 
+	padding: 10px;
 }
 
 .dropdown-item {
-	font-size: 1.5rem; /* aumenta la dimensione del font per ogni elemento del menu */
-	line-height: 2; /* aumenta l'altezza della linea per aumentare lo spazio tra gli elementi del menu */
+	font-size: 1.5rem; 
+	line-height: 2; 
 }
 
 #loading.spinner-border {
